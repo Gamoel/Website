@@ -21,12 +21,16 @@
 
 body {
   background: #f1f1f1;
+  font-size: 1rem;
+  height: 100vh;
+  min-width: 280px;
+}
+
+.blog {
   display: flex;
   flex-direction: column;
-  font-size: 1rem;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .blog-card {
@@ -84,6 +88,8 @@ body {
   padding: 10px;
   width: 100%;
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
 }
 .blog-card .details a {
   text-decoration: dotted underline;
@@ -111,6 +117,10 @@ body {
 }
 .blog-card .details .tags li:first-child {
   margin-left: -4px;
+}
+.blog-card .source-reference {
+  margin-top: auto;
+  font-size: 0.6rem;
 }
 .blog-card .description {
   padding: 1rem;

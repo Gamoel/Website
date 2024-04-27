@@ -25,12 +25,16 @@
 
 body {
   background: #f1f1f1;
+  font-size: 1rem;
+  height: 100vh;
+  min-width: 280px;
+}
+
+.blog {
   display: flex;
   flex-direction:column;
-  font-size: 1rem;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 $color_white: #fff;
@@ -95,12 +99,15 @@ $color_grey_dark: #a2a2a2;
     padding: 10px;
     width: 100%;
     font-size: .9rem;
+    display: flex;
+    flex-direction: column;
     a {
       text-decoration: dotted underline
     }
     ul li {
       display: inline-block;
     }
+
     .author:before {
       font-family: FontAwesome;
       margin-right: 10px;
@@ -127,6 +134,11 @@ $color_grey_dark: #a2a2a2;
       }
     }
   }
+  .source-reference{
+    margin-top: auto;
+    font-size: .6rem;
+  }
+
   .description {
     padding: 1rem;
     background: $color_white;
